@@ -1,0 +1,240 @@
+Q1.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Person
+{
+   public static void main(String args[])
+   { 
+  Scanner s=new Scanner(System.in);
+  System.out.println("Enter input number:");
+  int i=s.nextInt();
+  if(i>0)
+  {
+    System.out.println("The number is positive");
+  }
+  else if(i<0)
+  {
+    System.out.println("The number is negative");
+  }
+  else if(i==0)
+  {
+    System.out.println("The number is equal to zero");
+  }
+   }
+}
+
+Q2.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class OddnEven
+{
+   public static void main(String args[])
+   { 
+  Scanner s=new Scanner(System.in);
+  System.out.println("Enter input number:");
+  int i=s.nextInt();
+  if(i%2==0)
+  {
+    System.out.println("The number is even");
+  }
+  else 
+  {
+    System.out.println("The number is odd");
+  }
+   }
+}
+
+Q3.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Alphabet
+{
+   public static void main(String args[])
+   { 
+  Scanner s=new Scanner(System.in);
+  System.out.println("Enter input character");
+  char i=s.next().charAt(0);
+  if(i=='a' || i=='e' || i=='i' || i=='o' || i=='u' )
+  {
+    System.out.println("The character is a vowel");
+  }
+  else 
+  {
+    System.out.println("The character is a consonant");
+  }
+   }
+}
+
+Q4.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class CharAplha
+{
+    public static void main(String args[])
+    {
+        char ch;
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Enter a Character : ");
+        ch = scan.next().charAt(0);
+		
+        if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+        {
+            System.out.print(ch + " is an Alphabet");
+        }
+        else
+        {
+            System.out.print(ch + " is not an Alphabet");
+        }
+    }
+}
+
+Q5.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Largest
+{
+   public static void main(String args[])
+   { 
+   Scanner s=new Scanner(System.in);
+   System.out.println("Enter input1");
+   int i= s.nextInt();
+   System.out.println("Enter input2");
+   int j=s.nextInt();
+   System.out.println("Enter input3");
+   int k=s.nextInt();
+   
+   if(i>j && i>k)
+   {
+       System.out.println("The largest number is:"+i);
+   }
+   else if(j>i && j>k)
+   {
+       System.out.println("The largest number is:"+j);
+   }
+   else if(k>i && k>j)
+   {
+       System.out.println("The largest number is:"+k);
+   
+   }
+  }
+  
+}
+Q6.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Year
+{
+   public static void main(String args[])
+   { 
+   Scanner s=new Scanner(System.in);
+   System.out.println("Enter input year");
+   int i=s.nextInt();
+   if(i%4==0)
+   {
+       System.out.println("The year is a leap year");
+   }
+   else
+   {
+       System.out.println("The year is a leap year");
+   }
+   }
+   
+  
+}
+Q7.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Hello
+{
+   public static void main(String args[])
+   { 
+  int i=0;
+  for(i=0;i<5;i++)
+  {
+      System.out.println("Hello");
+  }
+  }
+  
+}
+Q8.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Sum
+{
+   public static void main(String args[])
+   {
+       Scanner s= new Scanner(System.in);
+       System.out.println("Enter Input 1");
+       int a=s.nextInt();
+        System.out.println("Enter Input 2");
+       int b=s.nextInt();
+        System.out.println("Enter Input 3");
+       int c=s.nextInt();
+  
+   int sum=a+b+c;
+   System.out.println("The sum is:"+sum);
+   }
+   
+  
+}
+
+Q9.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class ForLoop
+{
+    public static void main(String args[])
+    {
+        int i,total;
+        int sum=0;
+        for (i=0;i<10;i++)
+        {
+            sum = sum +i;
+        }
+        total=sum;
+        System.out.println("The sum is:"+total);
+        
+        
+    }
+}
+Q10.
+import java.util.*;
+
+import java.lang.*;
+
+import java.io.*;
+
+class Length
+{
+
+ 
+    public static void main(String []args)
+     
+{
+      
+ Scanner s=new Scanner(System.in);
+       
+System.out.println("Input number");
+       
+int number=s.nextInt();
+
+int length = (int) Math.log10(number) + 1;
+
+System.out.println("the number of digits are:"+length);
+
+     
+}
+
+}
+
+
